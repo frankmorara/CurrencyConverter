@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_currency"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="100" />
+    <TextView
+        android:id="@+id/option_text"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/convert_from"
+        app:layout_constraintTop_toBottomOf="@id/input_currency"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/option_currencies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:checkedButton="@id/option_sterling_pounds"
+        app:layout_constraintTop_toBottomOf="@id/option_text"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <RadioButton
+            android:id="@+id/option_sterling_pounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sterling_pouds"
+            />
+        <RadioButton
+            android:id="@+id/option_euros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/euros"
+            />
+        <RadioButton
+            android:id="@+id/option_us_dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/us_dollars" />
+        <RadioButton
+            android:id="@+id/option_south_african_rand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/south_african_rand"
+            />
+        <RadioButton
+            android:id="@+id/option_singapore_dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/singapore_dollars"/>
+        <RadioButton
+            android:id="@+id/option_nigerian_naira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nigerian_naira" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option_currencies"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="TextView"
+        app:layout_constraintTop_toBottomOf="@id/convert_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
