@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CurrencyConverter.iml" filepath="$PROJECT_DIR$/.idea/modules/CurrencyConverter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Coverter.iml" filepath="$PROJECT_DIR$/.idea/modules/Coverter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Coverter.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Coverter.app.iml" />
     </modules>
   </component>
 </project>
