@@ -7,15 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/icon_euro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/input_currency"
-        app:srcCompat="@drawable/ic_euro"
-        app:layout_constraintBottom_toBottomOf="@id/input_currency"
-        tools:ignore="VectorDrawableCompat" />
 
 
     <EditText
@@ -25,7 +16,7 @@
         android:hint="@string/enter_amount"
         android:layout_marginStart="25dp"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@id/icon_euro"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:autofillHints="100"
         android:layout_marginBottom="20dp"
