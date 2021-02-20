@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val foreignCurrency = textInputEditText.toDoubleOrNull()
 
         if (foreignCurrency == null){
+            binding.resultTextView.text = " "
             return
         }
         val checkedRadio = when(binding.optionCurrencies.checkedRadioButtonId){
