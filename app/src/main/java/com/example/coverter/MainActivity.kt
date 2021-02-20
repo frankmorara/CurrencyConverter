@@ -1,9 +1,8 @@
 package com.example.coverter
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.coverter.R.string
+import androidx.appcompat.app.AppCompatActivity
 import com.example.coverter.databinding.ActivityMainBinding
 import kotlin.math.ceil
 
